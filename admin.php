@@ -1,12 +1,11 @@
 <?php
  
- $newuser = $_POST["newuser"];
- $newsenha = $_POST["newsenha"];
+ $user = $_POST["user"];
+ $senha = $_POST["senha"];
 
-
-    $newuser = "Usuário";
-    if (isset($_POST["newuser"]) && $_POST["newuser"] != "") {
-        $newuser = $_POST["newuser"];
+    $user = "Usuário";
+    if (isset($_POST["user"]) && $_POST["user"] != "") {
+        $user = $_POST["user"];
     }
     $letra = "o";
     if (isset($_POST["sexo"]) && $_POST["sexo"] == "f") {
@@ -40,7 +39,7 @@
 
         <div id="novoadmin">
           <?php
-           echo "<h1>Bem-vind$letra $newuser, que bom que se juntou a nós.</h1>";
+           echo "<h1>Bem-vind$letra $user, que bom que se juntou a nós.</h1>";
            echo "<h2>Vamos criar seu primeiro Quiz?</h2>";
           ?>
         </div>
